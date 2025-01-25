@@ -17,3 +17,5 @@ target/
 #.idea/
 
 rusty-book-manager-template/
+
+.vscode/
