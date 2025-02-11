@@ -1,11 +1,11 @@
-use create::database::ConnectionPool;
+use crate::database::ConnectionPool;
 use async_trait::async_trait;
 use derive_new::new;
 use kernel::repository::health::HealthCheckRepository;
 
 #[derive(new)]
 pub struct HealthCheckRepositoryImpl {
-    db: ConnectPool,
+    db: ConnectionPool,
 }
 
 #[async_trait]
